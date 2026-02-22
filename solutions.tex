@@ -143,12 +143,14 @@ Therefore, $\Phi$ is a field homomorphism.
 \end{sol}
 
 \begin{sol}{xca: prime field is fixed}
-    By definition $K_0=\{m1\colon m\in \Z\}$ and 
-    $\sigma:K\to K$ is a field homomorphism,
-    so $\sigma(1)=1$.
-    Hence, for every $m\in\Z$
+    In the proof of Proposition \ref{pro:prime subfield}
+    we showed that 
+    $K_0=\{(m1)(n1)^{-1}\colon m,n\in \Z\}$.
+    Moreover $\sigma:K\to K$ is a field homomorphism,
+    so  $\sigma(1)=1$.
+    Hence, for every $m,n\in\Z$
     \[
-    \sigma(m1)=m\sigma(1)=m1,
+    \sigma\left((m1)(n1)^{-1}\right)=\sigma(m1)\sigma(n1)^{-1}=(m1)(n1)^{-1},
     \]
     i.e. $\sigma|_{K_0}$ is the identity.
 \end{sol}
