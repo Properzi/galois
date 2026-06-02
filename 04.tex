@@ -15,11 +15,11 @@ that the algebraic closure always exists.
     an extension homomorphism $\varphi\colon C\to C_1$. Let $y\in C_1$ and $f=f(y,K)$ be 
     the minimal polynomial of $y$ in $K$. Since $f$ admits a factorization
     \[
-        f=\lambda\prod (X-\alpha_i)^{m_i}
+        f=\prod (X-\alpha_i)^{m_i}
     \]
     in $C[X]$, it follows that
     \[
-    f=\overline{\varphi}(f)=\varphi(\lambda)\prod (X-\varphi(\alpha_i))^{m_i}
+    f=\overline{\varphi}(f)=\prod (X-\varphi(\alpha_i))^{m_i}
     \]
     Since $0=f(y)$, we conclude that $y=\varphi(\alpha_j)$ for some $j$. In particular, $\varphi$ is
     surjective and hence $\varphi$ is bijective. 
@@ -128,7 +128,7 @@ Easy examples:
     $F=E$. 
 \end{proof}
 
-Note that if $E=K(x_1,\cdots,x_n)$ as in the statement of Proposition \ref{split_char}, then it automatically follows that $f$ factorizes linearly in $E[X]$.
+Note that if $E=K(x_1,\ldots,x_n)$ as in the statement of Proposition \ref{split_char}, then it automatically follows that $f$ factorizes linearly in $E[X]$.
 
 One immediately obtains the following consequence:
 If $E$ is a splitting field of $f\in K[X]$, then $E/K$ is finite. 
@@ -205,16 +205,16 @@ if $y=\sigma(x)$ for some $\sigma\in G$.
     If $x$ and $y$ are conjugate, say $y=\sigma(x)$ for some $\sigma\in G$, 
     let us write $g=f(x,K)$ as 
     \[
-    g=X^n+\sum_{i=0}^{n-1} a_iX^i
+    g=\sum_{i=0}^{n} a_iX^i
     \]
     for some $n\geq1$ and $a_0,\dots,a_{n-1}\in K$. 
-    Then $0=g(x)=x^n+\sum_{i=0}^{n-1}a_ix^i$ and hence $y$ is
+    Then $0=g(x)=\sum_{i=0}^{n}a_ix^i$ and hence $y$ is
     a root of $g$, as 
     \begin{align*}
-    0=\sigma\left(x^n+\sum_{i=0}^{n-1}a_ix^i\right)
-    &=\sigma(x)^n+\sum_{i=0}^{n-1}\sigma(a_i)\sigma(x)^i\\
-    &=\sigma(x)^n+\sum_{i=0}^{n-1}a_i\sigma(x)^i
-    =y^n+\sum_{i=0}^{n-1}a_iy^i.
+    0=\sigma\left(\sum_{i=0}^{n}a_ix^i\right)
+    &=\sum_{i=0}^{n}\sigma(a_i)\sigma(x)^i\\
+    &=\sum_{i=0}^{n}a_i\sigma(x)^i
+    =\sum_{i=0}^{n}a_iy^i.
     \end{align*}
     Thus $f(y,K)=g$. 
     
@@ -289,7 +289,7 @@ not true if $f$ is not irreducible. Find an example.
     with coefficients in $K$. A \emph{splitting field} 
     of $\{f_i:i\in I\}$ is an extension $E/K$
     such that every $f_i$ factorizes linearly in $E[X]$ and 
-    if $F/K$ is a sub extension of $E/K$ such that every $f_i$ 
+    if $F/K$ is a subextension of $E/K$ such that every $f_i$ 
     factorizes linearly in $F[X]$, then $F=E$. 
 \end{definition}
 

@@ -679,7 +679,7 @@ Note that radical extensions are finite.
     
     Since $x_j^{a_j}\in K(x_1,\dots,x_{j-1})$ for some integer $a_j$, 
     \[
-    \sigma_i(x_j)^{a_j}=\sigma_i\left(x_j^{a_j}\right)\in\sigma_i(K(x_1,\dots,x_{j-1})=K(\sigma_i(x_1),\dots,\sigma_i(x_{j-1}))
+    \sigma_i(x_j)^{a_j}=\sigma_i\left(x_j^{a_j}\right)\in\sigma_i(K(x_1,\dots,x_{j-1}))=K(\sigma_i(x_1),\dots,\sigma_i(x_{j-1}))
     \]
     Thus $L/K$ is radical and Galois. 
     
@@ -763,17 +763,14 @@ Theorem \ref{thm:by_radicals} translates into the following result:
 \end{exercise}
 
 As a consequence, the general polynomial of degree $n\geq5$ 
-is not solvable by radicals, as its Galois group is isomorphic to 
-$\Sym_5$. 
+is not solvable by radicals, as its Galois group contains a subgroup isomorphic to $\Sym_5$. 
 
 \begin{example}
     Let $p$ be a prime number and $f=X^5-2pX+p\in\Q[X]$. 
     We claim that 
     $f$ is not solvable by radicals. 
-    
-    By Gauss' theorem, one proves that $f$ has no rational roots. 
 
-    Note that $f'=5X^4-2p$. Then $\alpha=\sqrt[4]{2p/5}$ and $\beta=-\sqrt[4]{2p/5}$ are
+    Note that $f'=5X^4-2p$. Then $\alpha=\sqrt[4]{2p/5}$ and $\beta=-\sqrt[4]{2p/5}$
     are critical points. Since $f(\alpha)<0$ and $f(\beta)>0$, it follows that $f$ has
     exactly three real roots. Let 
     $x_1,x_2\in\C\setminus\R$ and $x_3,x_4,x_5\in\R$ be the roots

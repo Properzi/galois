@@ -158,7 +158,7 @@ Therefore, $\Phi$ is a field homomorphism.
 \begin{sol}{xca: X^3-2}
     If $X^3-2$ were reducible, since it has degree 3,
     it would have a linear
-    factor in the decomposition in irreducibles.
+    factor in the decomposition into irreducibles.
     Therefore it would have a rational root.
     But the roots of $X^3-2$ are $\sqrt[3]{2},\sqrt[3]{2}\xi,\sqrt[3]{2}\xi^2$,
     where $\xi$ is a primitive third root of unity,
@@ -473,11 +473,11 @@ $$f(\sqrt[4]{3}i,\Q(i))=X^4+3.$$
     degree $[E:\Q(i)]$.
     Observe that, since $\alpha-\sqrt{2}=i\sqrt[3]{5}$,
     \[
-    \alpha^3-3\sqrt{2}\alpha^2+6\alpha-2\sqrt{2}=-i5.
+    \alpha^3-3\sqrt{2}\alpha^2+6\alpha-2\sqrt{2}=-5i.
     \]
     Hence 
     \[
-    \sqrt{2}=\frac{\alpha^3\alpha^2+6\alpha+i5}{3\alpha^2+2}\in E
+    \sqrt{2}=\frac{\alpha^3+6\alpha+5i}{3\alpha^2+2}\in E
     \]
     and so also $\sqrt[3]{5}=\frac{\alpha-\sqrt{2}}{i}\in E$. 
     Therefore $E=\Q(\sqrt{2},\sqrt[3]{5},i)$.
@@ -487,7 +487,7 @@ $$f(\sqrt[4]{3}i,\Q(i))=X^4+3.$$
     We know that $i$ has degree 2 over $\Q$,
 so $[\Q(\sqrt[3]{5},i):\Q(\sqrt[3]{5})]$ and 
 $[\Q(\sqrt{2},i):\Q(\sqrt{2})]$ are both at most 2.
-Moreover $\Q(\sqrt[3]{5})$ and $Q(\sqrt{2})$ are contained in $\R$,
+Moreover $\Q(\sqrt[3]{5})$ and $\Q(\sqrt{2})$ are contained in $\R$,
 while $i\notin\R$.
 Hence
 \[
@@ -694,7 +694,7 @@ if $\alpha\in \C$ is a root of $f$,
 then also $-\alpha$ is a root of $f$.
  Hence, given two roots $\alpha,\beta\in \C$
  such that $\beta\neq-\alpha$,
-we have that the decomposition field of $f$ over $\Q$ is
+we have that the splitting field of $f$ over $\Q$ is
 $E=\Q(\alpha,-\alpha,\beta,-\beta)$.
  But $-\alpha,-\beta\in \Q(\alpha,\beta)\subseteq E$
  and so 
@@ -712,7 +712,7 @@ Therefore $E=\Q(\alpha,\beta)\subseteq \Q(\alpha,\sqrt{5})$.
 On the other hand $\sqrt{5}=\pm\alpha\beta\in\Q(\alpha,\beta)$,
  hence $\Q(\alpha,\sqrt{5})\subseteq\Q(\alpha,\beta)=E$.
  So we can conclude that $E=\Q(\alpha,\sqrt{5})$.
-Using the multiplicative of the degree of finite extension we get that
+Using the multiplicative relationship between the degrees of finite extension we get that
  \[
  [E:\Q]=[E:\Q(\alpha)][\Q(\alpha):\Q].
 \]
@@ -736,8 +736,8 @@ $[LF:L]\leq[F:K]$, to deduce that
  [\Q(\alpha,\sqrt{5}):\Q(\alpha)]\leq [\Q(\sqrt{5}):\Q]=2.
  \]
  The last equality is because $f(\sqrt{5},\Q)=X^2-5$,
- as it is monic has $\sqrt{5}$ as a root 
- and it's irreducible 
+ as it is monic, has $\sqrt{5}$ as a root 
+ and is irreducible 
  (due to Eisenstein's criterion or
  because it is of degree 2 with 2 non-rational roots).
  Finally, we want to understand whether $[\Q(\alpha,\sqrt{5}):\Q(\alpha)]$ is 1 or 2.
@@ -759,8 +759,8 @@ the polynomial $f(X)=X^3-2$.
 To prove that $\Q(\sqrt[3]{2},\xi)$ is a normal extension 
 we use Proposition \ref{pro:normal<=>dec},
 so it is enough to prove
-that $\Q(\sqrt[3]{2},\xi)$ is the decomposition field of $f$.
-We know that the decomposition field $E$ of $f$ over $\Q$ is
+that $\Q(\sqrt[3]{2},\xi)$ is the splitting field of $f$.
+We know that the splitting field $E$ of $f$ over $\Q$ is
 $\Q$ extended with the roots of $f$, i.e.
 $E=\Q(\sqrt[3]{2},\sqrt[3]{2}\xi,\sqrt[3]{2}\xi^2)$.
 But it's easy to see that actually 
@@ -823,7 +823,7 @@ To sum up we have that $\sqrt{2}\not\in \Q(\sqrt[4]{7})$ and
 \]
 \begin{enumerate}
     \item We know that $\sqrt[4]{7} \in \Q(\alpha)$ 
-    which has minimal polynomial $f(\sqrt[4]{7},\Q) = x^4-7$.
+    which has minimal polynomial $f(\sqrt[4]{7},\Q) = X^4-7$.
     One root of this polynomial is $i\sqrt[4]{7}$.
     This root is not in $\Q(\alpha)\subseteq \R$ as it is in $\C\setminus\R$. 
     Therefore $\Q(\alpha)/\Q$ is not normal by Proposition \ref{pro:linear_factorization}.
