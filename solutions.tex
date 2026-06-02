@@ -750,6 +750,16 @@ $\alpha^2$ as it is a root of $X^2-5X+5$, i.e.
  So $\Q(\alpha,\sqrt{5})\subseteq\Q(\alpha)\subseteq \Q(\alpha,\sqrt{5})$, 
 which means that $E=\Q(\alpha)$ and
 $[E:\Q]=[\Q(\alpha):\Q]=4$.
+
+We now need to compute $\Gal(E/\Q)$. Recall that
+\[f=(X \pm \alpha)(X \pm\sqrt{5}\alpha^{-1}).\]
+Firstly, it is clear that any $\sigma \in \Gal(E/\Q)$ is completely determined by its image on $\alpha$. This is because $\alpha^2=(5\pm\sqrt{5})/2$, and hence
+\[\sigma(\sqrt{5})=\pm\sigma(2\alpha^2-5)=\pm2\sigma(\alpha)^2\mp5.\]
+The map given by $\sigma(\alpha)=-\alpha$, which we note sends $\sqrt{5}$ to $\sqrt{5}$ gives an element of $\Gal(E/\Q)$ of order 2. In particular, letting $\beta=\sqrt{5}\alpha^{-1}$ as above, we have $\sigma(\pm\alpha)=\mp\alpha$ and $\sigma(\pm\beta)=\mp\beta$. Another possible candidate is $\tau(\alpha)=\beta$. We compute
+\[\tau(\sqrt{5})=\pm2\beta^2\mp5=\pm2(5/\alpha^2)\mp5=\pm(5\mp\sqrt{5})\mp5=-\sqrt{5}.\]
+Thus
+\[\tau(\beta)=\tau(\sqrt{5}\alpha^{-1})=-\sqrt{5}\beta^{-1}=-\alpha\sqrt{5}/\sqrt{5}=-\alpha.\]
+So $\tau(\pm\alpha)=\pm\beta$ and $\tau(\pm\beta)=\mp\alpha$. In fact, we see that $\tau$ has order 4, and in particular, $\sigma=\tau^2$. We therefore see that $\tau$ generates $\Gal(E/\Q)$ and hence $\Gal(E/\Q)=\langle \tau \rangle \cong C_4$.
 \end{sol}
 
 
@@ -880,10 +890,10 @@ We need to find a bijective map
 \[
 \Hom(E/K,C/K)\to\Hom(E/K,C_1/K).
 \]
-If $\sigma\in\Hom(E/K,C/K)$, then $\theta^{-1}\sigma\in\Hom(E/K,C_1/K)$. 
-If $\varphi\in\Hom(E/K,C_1/K)$, then $\theta\varphi\in\Hom(E/K,C/K)$. The 
-maps $\sigma\mapsto\theta^{-1}\sigma$ and 
-$\varphi\mapsto\theta\varphi$ are inverse to each other. 
+By Theorem \ref{thm:Artin}, there exists an extension isomorphism $\theta:C/K \to C_1/K$. If $\sigma\in\Hom(E/K,C/K)$, then $\theta\sigma\in\Hom(E/K,C_1/K)$. 
+If $\varphi\in\Hom(E/K,C_1/K)$, then $\theta^{-1}\varphi\in\Hom(E/K,C/K)$. The 
+maps $\sigma\mapsto\theta\sigma$ and 
+$\varphi\mapsto\theta^{-1}\varphi$ are inverse to each other. 
 \end{sol}
 
 \begin{sol}{xca:order_reversing}

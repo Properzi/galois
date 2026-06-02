@@ -265,8 +265,8 @@ An application:
 \end{proof}
 
 \index{Subgroup!maximal normal}
-Let $G$ be a group. A subgroup $N$ of $G$ is said to be \emph{maximal normal} 
-if $N$ is a normal subgroup of $G$ and there is no other normal subgroup of $G$ 
+Let $G$ be a group. A proper subgroup $N$ of $G$ is said to be \emph{maximal normal} 
+if $N$ is a normal subgroup of $G$ and there is no other proper normal subgroup of $G$ 
 containing $N$. 
 
 \begin{exercise}
@@ -438,7 +438,7 @@ Every permutation $\rho\in\Sym_n$ decomposes as a product of disjoint cycles, sa
 \rho=(a_1\cdots a_r)(b_1\cdots b_s)\cdots (c_1\cdots c_t)
 \]
 where, by convention, we do not write cycles of length one. 
-The cyclic structure of $\rho$ is, by definition, the ordered 
+The cyclic structure of $\rho$ is, by definition, the (unordered) 
 sequence of integers $r,s,\dots t$, where, again by convention,  
 we omit fixed points. For example, the cyclic structure of 
 the transposition $(ab)$ is 2, 
@@ -625,7 +625,7 @@ of the symmetric group $\Sym_n$.
     $E=K(x)$ for some $x$ such that $x^m\in K$. 
 \end{definition}
 
-Note that if $E=K(x)$ is a pure extension of type $m$ and $K$ contains 
+Note that if $E=K(x)$ is a pure extension of type $m$ and $K$ contains all
 $m$-th roots of one, then $E/K$ is a splitting field of $X^m-x^m$. 
 
 \begin{definition}
@@ -870,7 +870,7 @@ Now Theorem \ref{thm:Galois_great} will follow from the following theorem.
     \label{eq:radical_tower1}
     \prescript{H}{}{E}\subseteq R_1\subseteq R_2\subseteq\cdots\subseteq R_m,
     \end{equation}
-    where $E\subseteq R_m$. Now $E/\prescript{H}{}{E}$ is a Galois extension, as $H$ is normal in $G$. Moreover, 
+    where $E\subseteq R_m$. Now $\prescript{H}{}{E}/K$ is a Galois extension, as $H$ is normal in $G$. Moreover, 
     \[ 
     [\prescript{H}{}{E}:K]=(G:H)=p.
     \]
