@@ -53,7 +53,7 @@ with $A\vee B=A\cup B$ and $A\wedge B=A\cap B$.
 \end{example}
 
 \begin{example}
-    Let $n \in \Z$ be a positive integer and $\mathcal{D}(n)$ be the collection of positive integer devisors $d \in \Z$ of $n$. The relation
+    Let $n \in \Z$ be a positive integer and $\mathcal{D}(n)$ be the collection of positive integer divisors $d \in \Z$ of $n$. The relation
     \[
     l \leq m \Longleftrightarrow l \mid m
     \]
@@ -285,7 +285,7 @@ depends on order-reversing bijections).
 
 \begin{exercise}
 Let $E/K$ be a finite Galois extension 
-and $F,L\in L(E/K)$. Prove that $\Gal(E/FL)=\Gal(E/F)\cap\Gal(E/L)$ and 
+and $F,L\in \mathcal{L}(E/K)$. Prove that $\Gal(E/FL)=\Gal(E/F)\cap\Gal(E/L)$ and 
 $\Gal(E/F\cap L)=\langle\Gal(E/F),\Gal(E/L)\rangle$.    
 \end{exercise}
 
@@ -350,7 +350,7 @@ is an injective group homomorphism.
 
 \begin{proof}
     Since $E_1/K$ is algebraic, 
-    then $E_1E_2/E_2$ is algebraic. Since $E_2/K$ is algebraic, $E_1E_2/K$ is algebraic. Similarly, 
+    $E_1E_2/E_2$ is algebraic. Since $E_2/K$ is algebraic, $E_1E_2/K$ is algebraic. Similarly, 
     $E_1E_2/K$ is separable. 
     
     Let $C/K$ be an algebraic closure such that $E_1E_2\subseteq C$. If $\sigma\in\Hom(E_1E_2/K,C/K)$, then 
@@ -383,7 +383,7 @@ of algebra based on the ideas of Galois Theory.
 We need the following well-known facts:
 \begin{enumerate}
 \item Every real polynomial of odd degree admits a real root. This means that $\R$ 
-does not admit extension of odd degree $>1$. 
+does not admit extensions of odd degree $>1$. 
 \item Every complex number admits a square root in $\C$. This means that $\C$ 
 does not admit degree-two extensions.
 \end{enumerate}
@@ -394,7 +394,7 @@ The field $\C$ is algebraically closed.
 
 \begin{proof}
     Let $E/\C$ be an algebraic finite extension. Then $E/\R$ 
-    is finite separable extension of even degree. There exists a Galois
+    is a finite separable extension of even degree. There exists a Galois
     extension 
     $L/\R$ such that $E\subseteq L$, so $[L:\R]$ is even. Let $G=\Gal(L/\R)$. 
     Then $|G|=2^ms$ for some odd number $s$. If $T$ is a 2-Sylow subgroup
@@ -412,7 +412,7 @@ The field $\C$ is algebraically closed.
 \section{Purely inseparable extensions}
 
 Let $E/K$ be an algebraic extension. 
-In page \ref{separable} we defined the 
+In Chapter \ref{separable} we defined the 
 \emph{separable closure} of $K$ with respect to $E$ as 
 the field 
 \[
