@@ -4,7 +4,7 @@
 \begin{corollary}
     Let $a,b,c\in \Z$ be such that $a^2+b^2=c^2$. Then 
     \[
-    (a,b,c)=\lambda(r^2-s^2,-2rs, r^2+s^2)
+    (a,b,c)= \begin{cases} \lambda(r^2-s^2,2rs,r^2+s^2) & \text{or}\\ \lambda(2rs,r^2-s^2,r^2+s^2)\end{cases}
     \]
     for some $r,s\in\Z$ and some $\lambda\in\Z$.
 \end{corollary}
@@ -23,17 +23,30 @@
     By Hilbert's theorem, 
     there exists $\beta\in\Q(i)\setminus\{0\}$ such that 
     \[
-    \alpha=a+bi=\frac{\gamma(\beta)}{\beta}.
+    \alpha=a+bi=\frac{\beta}{\gamma(\beta)}.
     \]
     Note that if $m\in\Z\setminus\{0\}$, then 
-    $\frac{\gamma(m\beta)}{m\beta}=\frac{\gamma(\beta)}{\beta}$. 
+    $\frac{m\beta}{\gamma(m\beta)}=\frac{\beta}{\gamma(\beta)}$. 
     There exists $m\in\Z\setminus\{0\}$ such that 
-    $m\beta\in\Z[i]$, say $m\beta=r+is$ with $r,s\in\Z$. Then
+    $m\beta\in\Z[i]$, say $m\beta=r+is$ with $r,s\in\Z$ coprime. Then
     \[
-    \alpha=\frac{\gamma(\beta)}{\beta}=\frac{\gamma(m\beta)}{m\beta}=
-    \frac{r-is}{r+is}=\frac{r^2-s^2-2rsi}{r^2+s^2}.
+    \alpha=\frac{\beta}{\gamma(\beta)}=\frac{m\beta}{\gamma(m\beta)}=
+    \frac{r+is}{r-is}=\frac{r^2-s^2+2rsi}{r^2+s^2}=\frac{r^2-s^2}{r^2+s^2}+\frac{2rs}{r^2+s^2}i.
     \]
-    From this the claim follows. 
+    Note that
+    \[\gcd(r^2-s^2,r^2+s^2)=\gcd(r^2-s^2,(r^2-s^2)+(r^2+s^2))=\gcd(r^2-s^2,2r^2) \leq 2.\]
+    If the $\gcd$ is 1, then
+    \[(a,b,c)=\lambda(r^2-s^2,2rs,r^2+s^2).\]
+    Otherwise
+    \[(a,b,c)=\lambda\left(\frac{r^2-s^2}{2},\frac{2rs}{2},\frac{r^2+s^2}{2}\right).\]
+    However, as $r$ and $s$ are coprime such that $r^2-s^2 \equiv 0 \pmod2$, they must both be odd, and we can choose coprime integers $u$ and $w$ such that
+    \begin{align*}
+    r &= u+w,\\
+    s &= u-w.
+\end{align*}
+Substituting these in, we get
+\[\frac{r^2-s^2}{2}=2uw, \;\; \frac{2rs}{2}=u^2-w^2, \;\; \frac{r^2+s^2}{2}=u^2+w^2,\]
+giving us the second triple in the statement.
 \end{proof}
 
 \begin{exercise}
@@ -287,14 +300,14 @@ is proportional to
     \norm_{E/K}(\omega)=\omega^n=1.
     \]
     By Hilbert's theorem 90, 
-    there exists $b\in E^{\times}$ such that 
-    $\omega=\sigma(b)/b$. Thus
-    $\sigma(b)=\omega b$ and hence 
-    $\sigma^i(b)=\omega^i b$ for all $i\geq0$. Since 
+    there exists a $b\in E^{\times}$ such that 
+    $\omega=b/\sigma(b)$. Thus
+    $\sigma(b)=\omega^{-1} b$ and hence 
+    $\sigma^i(b)=\omega^{-i} b$ for all $i\geq0$. Since 
     $|\{b,\sigma(b),\dots,\sigma^{n-1}(b)\}|=n$, 
     it follows that $E=K(b)$. Moreover, 
     \[
-    \sigma(b^n)=\sigma(b)^n=(\omega b)^n=b^n
+    \sigma(b^n)=\sigma(b)^n=(\omega^{-1} b)^n=b^n
     \]
     and hence $b^n\in K$. This means that $E/K$ is a decomposition
     field of $X^n-b^n$. Note that $X^n-b^n$ is irreducible, as 

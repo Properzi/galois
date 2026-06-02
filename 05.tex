@@ -11,25 +11,26 @@
 \begin{proof}
     It is enough to prove that $\sigma$ is surjective. Why? 
     
-    Let $x\in E$ and 
-    $C$ be an algebraic closure of $K$ that contains $E$. By Proposition~\ref{pro:Artin}, there 
-    exists a field homomorphism $\varphi\colon C\to C$ such that $\varphi|_E=\sigma$. 
-    Thus $\varphi|_K=\sigma|_K=\id_K$. Let $G=\Gal(C/K)$. Then  
-    $\varphi\in G$. If $z\in O_G(x)$, 
-    then $z=\tau(x)$ for some $\tau\in G$ and hence
-    \[
-    \varphi(z)=\varphi(\tau(x))=(\varphi\tau)(x). 
-    \]
-    This implies that $\varphi(z)\in O_G(x)$ 
-    and $\varphi(O_G(x))=O_G(x)$. The restriction
-    $\sigma|_{E\cap O_G(x)}$ is injective. Then 
-    \begin{align*}
-        \sigma(E\cap O_G(x))&=\varphi(E\cap O_G(x))\\
-        &=\varphi(E)\cap\varphi(O_G(x))
-        =\sigma(E)\cap O_G(x)\subseteq E\cap O_G(x).
-        \end{align*}
-    Since $|E\cap O_G(x)|<\infty$, it follows that $E\cap O_G(x)=\sigma(E\cap O_G(x))$ and
-    hence $x$ belongs to the image of $\sigma$. 
+    Let $x\in E$, $f=f(x,K)$, and let $S=\{y \in E : f(y)=0\}$. Note that for any $y \in S$, we have that $\sigma(y) \in S$, and hence $\sigma(S) \subseteq S$. However, as $\sigma$ is injective and $S$ is finite, we must have that $\sigma(S)=S$. Hence there exists a $y \in S \subseteq E$ such that $\sigma(y)=x$, and therefore $\sigma$ must be surjective.
+    
+    % $C$ be an algebraic closure of $K$ that contains $E$. By Proposition~\ref{pro:Artin}, there 
+    % exists a field homomorphism $\varphi\colon C\to C$ such that $\varphi|_E=\sigma$. 
+    % Thus $\varphi|_K=\sigma|_K=\id_K$. Let $G=\Gal(C/K)$. Then  
+    % $\varphi\in G$. If $z\in O_G(x)$, 
+    % then $z=\tau(x)$ for some $\tau\in G$ and hence
+    % \[
+    % \varphi(z)=\varphi(\tau(x))=(\varphi\tau)(x). 
+    % \]
+    % This implies that $\varphi(z)\in O_G(x)$ 
+    % and $\varphi(O_G(x))=O_G(x)$. The restriction
+    % $\sigma|_{E\cap O_G(x)}$ is injective. Then 
+    % \begin{align*}
+    %     \sigma(E\cap O_G(x))&=\varphi(E\cap O_G(x))\\
+    %     &=\varphi(E)\cap\varphi(O_G(x))
+    %     =\sigma(E)\cap O_G(x)\subseteq E\cap O_G(x).
+    %     \end{align*}
+    % Since $|E\cap O_G(x)|<\infty$, it follows that $E\cap O_G(x)=\sigma(E\cap O_G(x))$ and
+    % hence $x$ belongs to the image of $\sigma$. 
 \end{proof}
 
 
