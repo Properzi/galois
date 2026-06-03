@@ -330,21 +330,21 @@ is proportional to
 
 \begin{proof}
     We first prove 1). 
-    Let $K_0$ be the prime field of $K$. Note that $K_0\simeq\Z/p$. 
-    Let $b$ be a root of $f$ and let $x\in K_0$. 
+    Let $K_0$ be the prime field of $K$ and $C$ be an algebraic closure of $K$. Note that $K_0\simeq\Z/p$. 
+    Let $b\in C$ be a root of $f$ and let $x\in K_0$. 
     Then
     \[
     f(b+x)=(b+x)^p-(b+x)-a
     =(b^p-b-a)+(x^p-x)=0
     \]
-    and thus $\{b+x:x\in K_0\}$ is the set of roots of $f$. Note that 
+    and thus $\{b+x:x\in K_0\}\subset C$ is the set of roots of $f$. Note that 
     $f'=-1$, so $f$ has no multiple roots. 
     
     We claim that if $b\not\in K$, then $f$ is irreducible. If 
     $f$ is not irreducible, then 
     $f=gh$ for some $g,h\in K[X]$ such that $0<\deg g<p$. There exists
     a subset $S$ of $K_0$ such that 
-    $g=\prod_{x\in S}(X-(b+x))$ and hence
+    $g=\prod_{x\in S}(X-(b+x))$ in $C[X]$ and hence
     \[
     |S|b+\sum_{x\in S}x=\sum_{x\in S}(b+x)\in K.
     \]
