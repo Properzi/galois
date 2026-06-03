@@ -549,16 +549,18 @@ in $E(F)=EF$. Hence $P\subseteq EF$.
 Moreover, since $E/K$ and $F/K$ are algebraic extensions,
 every element in $E\cup F$ is algebraic over $K$.
 So $EF=K(E\cup F)=K[E\cup F]$.
-Let $x\in EF$, then $x=f(\alpha_1,\dots,\alpha_k)$,
-for some polynomial $f\in K[X_1,\dots X_k]$ 
-and $\alpha_1,\dots,\alpha_k\in E\cup F$.
-We can then split the polynomial in $f=p+q$ so that 
-$x=p(e'_1,\dots,e'_n)+q(f'_1,\dots,f'_m)$,
-where $e'_i\in E$ and $f'_j\in F$ and $p,q\in K[X_1,\dots X_k]$.
-Since $E$ and $F$ are fields, so closed under multiplication,
-we can write $x$ as $x=\sum_{i=1}^Nk_ie_i+\sum_{j=1}^Mh_jf_j$,
-for some $k_i,h_j\in K$, $e_i\in E$ and $f_j\in F$.
-Then in particular $k_i\in K\subseteq F$ and $h_j\in K\subseteq E$, hence $x\in P$ and $EF\subseteq P$.
+So to check the reverse inclusion, 
+it is enough to check
+that $P$ is a subring of $EF$ containing 
+$K$ and $E\cup F$. 
+Given two elements 
+$\sum_{i=1}^me_if_i$ and $\sum_{i=1}^me'_if'_i$ of $P$, the sum is still in $P$ and 
+\[
+\left(\sum_{i=1}^me_if_i\right)\left(\sum_{i=1}^{m'}e'_if'_i\right)
+=\sum_{i,j}e_ie'_jf_if'_j\in P.
+\]
+Moreover it is clear that $P$ contains $K$, $E$ and $F$.
+Therefore $EF=K[E\cup F]\subseteq P$.
 \end{sol}
 
 \begin{sol}{xca:sqrt(2),sqrt(3)}
